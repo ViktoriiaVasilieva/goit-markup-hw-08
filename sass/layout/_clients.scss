@@ -1,7 +1,17 @@
-.clients-list {
-   display: flex;
-   justify-content: space-between;
-}
 .clients-section {
    background-color: var(--white-color);
+}
+.clients-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+   .clients-list {
+      display: flex;
+      justify-content: space-between;
+   }
+   .clients-section {
+      background-color: var(--white-color);
+   }
 }

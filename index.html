@@ -55,7 +55,7 @@
                </svg>
             </button>
             <ul class="contacts">
-               <li class="contacts__item">
+               <li class="contacts__item contacts__item-mail">
                   <a
                      class="contacts__link"
                      href="mailto:info@devstudio.com"
@@ -132,14 +132,14 @@
          </div>
       </header>
       <main>
-         <!-- <section class="hero">
+         <section class="hero">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="modal-btn" data-modal-open>
                Заказать услугу
             </button>
-         </section> -->
+         </section>
 
-         <!-- <section class="section">
+         <section class="section">
             <h2 class="section-title visually-hidden">Преимущества</h2>
             <div class="container">
                <ul class="feature-list">
@@ -195,9 +195,9 @@
                   </li>
                </ul>
             </div>
-         </section> -->
+         </section>
 
-         <!-- <section class="services">
+         <section class="services">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <div class="container">
                <ul class="services-list">
@@ -238,19 +238,59 @@
                   </li>
                </ul>
             </div>
-         </section> -->
+         </section>
 
-         <!-- <section class="section team">
+         <section class="section team">
             <h2 class="section-title">Наша команда</h2>
             <div class="container">
                <ul class="team-list">
                   <li class="team-list-item">
-                     <img
-                        src="./img/studio-page/team-1.jpg"
-                        alt="фото Product Designer"
-                        width="270"
-                        height="260"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./img/retina-img/team-1.webp    1x,
+                              ./img/retina-img/team-1@2x.webp 2x
+                           "
+                           media="(min-width:1200px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-1.jpg    1x,
+                              ./img/retina-img/team-1@2x.jpg 2x
+                           "
+                           media="(min-width:1200px)" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-1tablet.webp    1x,
+                              ./img/retina-img/team-1tablet@2x.webp 2x
+                           "
+                           media="(min-width:768px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-1tablet.jpg 1x,
+                              ./img/retina-img/team-1tablet.jpg 2x
+                           "
+                           media="(min-width:768px)" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-1.webp    1x,
+                              ./img/retina-img/team-1@2x.webp 2x
+                           "
+                           media="(min-width:320px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-1.jpg    1x,
+                              ./img/retina-img/team-1@2x.jpg 2x
+                           "
+                           media="(min-width:320px)" />
+                        <img
+                           src="./img/studio-page/team-1.jpg"
+                           alt="фото Product Designer"
+                           width="270"
+                           height="260"
+                     /></picture>
                      <div class="team-wrapper-description">
                         <h3 class="team-member-name">Игорь Демьяненко</h3>
                         <p lang="en" class="description-position">
@@ -314,12 +354,52 @@
                   </li>
 
                   <li class="team-list-item">
-                     <img
-                        src="./img/studio-page/team-2.jpg"
-                        alt="фото Frontend Developer"
-                        width="270"
-                        height="260"
-                     />
+                     <picture
+                        ><source
+                           srcset="
+                              ./img/retina-img/team-2desktop.webp    1x,
+                              ./img/retina-img/team-2desktop@2x.webp 2x
+                           "
+                           media="(min-width:1200px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-2desktop.jpg    1x,
+                              ./img/retina-img/team-2desktop@2x.jpg 2x
+                           "
+                           media="(min-width:1200px)" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-2tablet.webp    1x,
+                              ./img/retina-img/team-2tablet@2x.webp 2x
+                           "
+                           media="(min-width:768px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-2tablet.jpg    1x,
+                              ./img/retina-img/team-2tablet@2x.jpg 2x
+                           "
+                           media="(min-width:768px)" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-2.webp    1x,
+                              ./img/retina-img/team-2@2x.webp 2x
+                           "
+                           media="(min-width:320px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-2.jpg    1x,
+                              ./img/retina-img/team-2@2x.jpg 2x
+                           "
+                           media="(min-width:320px)" />
+                        <img
+                           src="./img/studio-page/team-2.jpg"
+                           alt="фото Frontend Developer"
+                           width="270"
+                           height="260"
+                     /></picture>
                      <div class="team-wrapper-description">
                         <h3 class="team-member-name">Ольга Репина</h3>
                         <p lang="en" class="description-position">
@@ -383,12 +463,52 @@
                   </li>
 
                   <li class="team-list-item">
-                     <img
-                        src="./img/studio-page/team-3.jpg"
-                        alt="фото Marketing"
-                        width="270"
-                        height="260"
-                     />
+                     <picture
+                        ><source
+                           srcset="
+                              ./img/retina-img/team-3desktop.webp    1x,
+                              ./img/retina-img/team-3desktop@2x.webp 2x
+                           "
+                           media="(min-width:1200px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-3desktop.jpg    1x,
+                              ./img/retina-img/team-3desktop@2x.jpg 2x
+                           "
+                           media="(min-width:1200px)" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-3tablet.webp    1x,
+                              ./img/retina-img/team-3tablet@2x.webp 2x
+                           "
+                           media="(min-width:768px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-3tablet.jpg    1x,
+                              ./img/retina-img/team-3tablet@2x.jpg 2x
+                           "
+                           media="(min-width:768px)" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-3.webp    1x,
+                              ./img/retina-img/team-3@2x.webp 2x
+                           "
+                           media="(min-width:320px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-3.jpg    1x,
+                              ./img/retina-img/team-3@2x.jpg 2x
+                           "
+                           media="(min-width:320px)" />
+                        <img
+                           src="./img/studio-page/team-3.jpg"
+                           alt="фото Marketing"
+                           width="270"
+                           height="260"
+                     /></picture>
                      <div class="team-wrapper-description">
                         <h3 class="team-member-name">Николай Тарасов</h3>
                         <p lang="en" class="description-position">Marketing</p>
@@ -450,12 +570,52 @@
                   </li>
 
                   <li class="team-list-item">
-                     <img
-                        src="./img/studio-page/team-4.jpg"
-                        alt="фото UI Designer"
-                        width="270"
-                        height="260"
-                     />
+                     <picture
+                        ><source
+                           srcset="
+                              ./img/retina-img/team-4desktop.webp    1x,
+                              ./img/retina-img/team-4desktop@2x.webp 2x
+                           "
+                           media="(min-width:1200px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-4desktop.jpg    1x,
+                              ./img/retina-img/team-4desktop@2x.jpg 2x
+                           "
+                           media="(min-width:1200px)" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-4tablet.webp    1x,
+                              ./img/retina-img/team-4tablet@2x.webp 2x
+                           "
+                           media="(min-width:768px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-4tablet.jpg    1x,
+                              ./img/retina-img/team-4tablet@2x.jpg 2x
+                           "
+                           media="(min-width:768px)" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-4.webp    1x,
+                              ./img/retina-img/team-4@2x.webp 2x
+                           "
+                           media="(min-width:320px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/retina-img/team-4.jpg    1x,
+                              ./img/retina-img/team-4@2x.jpg 2x
+                           "
+                           media="(min-width:320px)" />
+                        <img
+                           src="./img/studio-page/team-4.jpg"
+                           alt="фото UI Designer"
+                           width="270"
+                           height="260"
+                     /></picture>
                      <div class="team-wrapper-description">
                         <h3 class="team-member-name">Михаил Ермаков</h3>
                         <p lang="en" class="description-position">
@@ -519,8 +679,8 @@
                   </li>
                </ul>
             </div>
-         </section> -->
-         <!-- <section class="section clients-section">
+         </section>
+         <section class="section clients-section">
             <h2 class="section-title">Постоянные клиенты</h2>
             <div class="container">
                <ul class="clients-list">
@@ -604,12 +764,12 @@
                   </li>
                </ul>
             </div>
-         </section> -->
+         </section>
       </main>
-      <!-- <footer class="footer">
+      <footer class="footer">
          <div class="container footer-container">
             <div class="footer-adsress-block">
-               <a href="./index.html" lang="en" class="logo"
+               <a href="./index.html" lang="en" class="logo logo-footer"
                   >Web<span class="logo-footer__title">Studio</span></a
                >
                <address class="address">
@@ -701,8 +861,8 @@
                </span>
             </form>
          </div>
-      </footer> -->
-      <!-- <div class="backdrop is-hidden" data-modal>
+      </footer>
+      <div class="backdrop is-hidden" data-modal>
          <div class="modal">
             <button type="button" class="close-modal-button" data-modal-close>
                <svg class="close-modal-icon" width="18" height="18">
@@ -782,7 +942,7 @@
                <button type="submit" class="contact-form-btn">Отправить</button>
             </form>
          </div>
-      </div> -->
+      </div>
       <script src="./js/modal.js"></script>
       <script src="./js/menu.js"></script>
    </body>
