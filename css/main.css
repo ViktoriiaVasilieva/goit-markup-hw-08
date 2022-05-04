@@ -444,12 +444,12 @@ body button {
     min-width: 450px;
     min-height: 609px;
   }
-  .contact-form-title {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 1200px) {
+  .contact-form-title {
+    width: 528px;
+  }
   .backdrop.is-hidden .modal {
     -webkit-transform: translate(-50%, -50%) scale(1.1);
             transform: translate(-50%, -50%) scale(1.1);
@@ -1078,6 +1078,15 @@ body button {
 }
 
 @media screen and (min-width: 768px) {
+  .nav-links__link:hover,
+  .nav-links__link:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+  .nav-links__link {
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .contacts__icon-mobile {
     width: 10px;
     height: 14px;
@@ -1121,9 +1130,8 @@ body button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-color);
   }
-  .current-link:current {
+  .nav-links:current {
     color: var(--accent-color);
   }
   .nav-links {
@@ -1138,9 +1146,6 @@ body button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-color);
-  }
-  .nav-links__item:current {
-    color: var(--accent-color);
   }
   .nav-links__item:not(:last-child) {
     margin-right: 50px;
@@ -1169,15 +1174,15 @@ body button {
   .mobile-menu-btn {
     display: none;
   }
-  :current {
-    color: var(--accent-color);
-  }
-  __link {
+  .nav-links__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-color);
+  }
+  .current-link {
+    color: var(--accent-color);
   }
   .hover-line::after {
     display: block;
@@ -1186,11 +1191,6 @@ body button {
     height: 4px;
     background-color: #2196f3;
     border-radius: 2px;
-  }
-  .nav-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .contacts__link {
     display: -webkit-box;
@@ -1235,9 +1235,6 @@ body button {
     display: -ms-flexbox;
     display: flex;
   }
-  .nav-links:current {
-    color: var(--accent-color);
-  }
   .nav-links__link {
     padding: 32px 0;
     display: block;
@@ -1248,6 +1245,12 @@ body button {
     color: var(--primary-color);
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-links:current {
+    color: var(--accent-color);
+  }
+  .current-link {
+    color: var(--accent-color);
   }
   .contacts {
     display: -webkit-box;
@@ -1264,11 +1267,6 @@ body button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-  }
-  .nav-links__link:hover,
-  .nav-links__link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
   }
   .contacts__link {
     display: -webkit-box;

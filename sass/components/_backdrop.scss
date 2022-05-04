@@ -210,11 +210,11 @@
       min-width: 450px;
       min-height: 609px;
    }
-   .contact-form-title {
-      width: 100%;
-   }
 }
 @media screen and (min-width: 1200px) {
+   .contact-form-title {
+      width: 528px;
+   }
    .backdrop.is-hidden .modal {
       transform: translate(-50%, -50%) scale(1.1);
    }
