@@ -54,6 +54,10 @@
          url('/img/background-img-tablet.jpg');
       max-width: 768px;
       min-height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 auto;
    }
    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -65,16 +69,16 @@
                rgba(47, 48, 58, 0.4)
             ),
             url('/img/background-img-tablet@2x.jpg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin: 0 auto;
       }
    }
    @media screen and (min-width: 1200px) {
       .hero__title {
          @include font-size-height(44px, 1.36);
-         font-weight: 900;
-         letter-spacing: 0.06em;
-         text-transform: uppercase;
-         color: var(--white-color);
-         margin: auto;
+         margin: 0 auto;
          width: 696px;
          height: 120px;
       }

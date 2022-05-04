@@ -61,7 +61,11 @@
                      href="mailto:info@devstudio.com"
                      lang="en"
                   >
-                     <svg class="contacts__icon" width="16" height="12">
+                     <svg
+                        class="contacts__icon contacts__icon-envelope"
+                        width="16"
+                        height="12"
+                     >
                         <use href="./img/sprite.svg#icon-envelope-1"></use>
                      </svg>
                      info@devstudio.com
@@ -69,7 +73,11 @@
                </li>
                <li class="contacts__item">
                   <a class="contacts__link" href="tel:+380961111111">
-                     <svg class="contacts__icon" width="10" height="16">
+                     <svg
+                        class="contacts__icon contacts__icon-mobile"
+                        width="10"
+                        height="16"
+                     >
                         <use href="./img/sprite.svg#icon-phone"></use>
                      </svg>
                      +38 096 111 11 11</a
@@ -125,7 +133,11 @@
                      <a href="" class="social-media-list__link">Facebook</a>
                   </li>
                   <li class="social-media-list__item">
-                     <a href="" class="social-media-list__link">LinkedIn</a>
+                     <a
+                        href=""
+                        class="social-media-list__link social-media-list__link_last-item"
+                        >LinkedIn</a
+                     >
                   </li>
                </ul>
             </div>
@@ -202,36 +214,79 @@
             <div class="container">
                <ul class="services-list">
                   <li class="services-item">
-                     <img
-                        src="./img/studio-page/we-do-1img.jpg"
-                        alt="печать на клавиатуре"
-                        width="370"
-                        height="294"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./img/studio-page/we-do-1img.webp    1x,
+                              ./img/studio-page/we-do-1img@2x.webp 2x
+                           "
+                           media="(min-width:1200px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/studio-page/we-do-1img.jpg    1x,
+                              ./img/studio-page/we-do-1img@2x.jpg 2x
+                           "
+                           media="(min-width:1200px)" />
+                        <img
+                           src="./img/studio-page/we-do-1img.jpg"
+                           alt="печать на клавиатуре"
+                           width="370"
+                           height="294"
+                     /></picture>
+
                      <div class="services-lable">
                         <p class="lable">Десктопные приложения</p>
                      </div>
                   </li>
 
                   <li class="services-item">
-                     <img
-                        src="./img/studio-page/we-do-2img.jpg"
-                        alt="использование телефона и ноутбука"
-                        width="370"
-                        height="294"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./img/studio-page/we-do-2img.webp    1x,
+                              ./img/studio-page/we-do-2img@2x.webp 2x
+                           "
+                           media="(min-width:1200px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/studio-page/we-do-2img.jpg    1x,
+                              ./img/studio-page/we-do-2img@2x.jpg 2x
+                           "
+                           media="(min-width:1200px)" />
+                        <img
+                           src="./img/studio-page/we-do-2img.jpg"
+                           alt="использование телефона и ноутбука"
+                           width="370"
+                           height="294"
+                     /></picture>
                      <div class="services-lable">
                         <p class="lable">Мобильные приложения</p>
                      </div>
                   </li>
 
                   <li class="services-item">
-                     <img
-                        src="./img/studio-page/we-do-3img.jpg"
-                        alt="работа с планшетом"
-                        width="370"
-                        height="294"
-                     />
+                     <picture
+                        ><source
+                           srcset="
+                              ./img/studio-page/we-do-3img.webp    1x,
+                              ./img/studio-page/we-do-3img@2x.webp 2x
+                           "
+                           media="(min-width:1200px)"
+                           type="image/webp" />
+                        <source
+                           srcset="
+                              ./img/studio-page/we-do-3img.jpg    1x,
+                              ./img/studio-page/we-do-3img@2x.jpg 2x
+                           "
+                           media="(min-width:1200px)" />
+                        <img
+                           src="./img/studio-page/we-do-3img.jpg"
+                           alt="работа с планшетом"
+                           width="370"
+                           height="294"
+                     /></picture>
                      <div class="services-lable">
                         <p class="lable">Дизайнерские решения</p>
                      </div>
@@ -248,15 +303,15 @@
                      <picture>
                         <source
                            srcset="
-                              ./img/retina-img/team-1.webp    1x,
-                              ./img/retina-img/team-1@2x.webp 2x
+                              ./img/retina-img/team-1desktop.webp    1x,
+                              ./img/retina-img/team-1desktop@2x.webp 2x
                            "
                            media="(min-width:1200px)"
                            type="image/webp" />
                         <source
                            srcset="
-                              ./img/retina-img/team-1.jpg    1x,
-                              ./img/retina-img/team-1@2x.jpg 2x
+                              ./img/retina-img/team-1desktop.jpg    1x,
+                              ./img/retina-img/team-1desktop@2x.jpg 2x
                            "
                            media="(min-width:1200px)" />
                         <source

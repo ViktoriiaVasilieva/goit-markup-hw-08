@@ -25,11 +25,8 @@
 
 @media screen and (min-width: 1200px) {
    .logo {
-      font-family: var(--secondary-font-title);
-      font-weight: 700;
       @include font-size-height(26px, 1.19);
-      letter-spacing: 0.03em;
-      color: #2196f3;
+
       margin-right: 93px;
    }
 }

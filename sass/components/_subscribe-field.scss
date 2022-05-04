@@ -35,6 +35,7 @@
    color: var(--white-color);
    margin-bottom: 20px;
 }
+
 .contact-form-email {
    background-color: var(--header-footer-background-color);
    width: 100%;
@@ -43,6 +44,7 @@
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
    padding: 15px 16px;
+
    color: var(--white-color);
    margin-bottom: 20px;
 
@@ -51,60 +53,20 @@
       color: rgba(255, 255, 255, 0.6);
    }
 }
+
 @media screen and (min-width: 1200px) {
+   .subscribe-us-title {
+      text-align: start;
+   }
    .contact-footer-wrapper {
       display: flex;
    }
    .contact-form-footer {
       margin-left: 93px;
    }
-
-   .contact-form-footer-btn {
-      position: relative;
-
-      background-color: var(--accent-color);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-      @include font-size-height(16px, 1.9);
-      font-weight: 700;
-      letter-spacing: 0.06em;
-
-      color: var(--white-color);
-      margin-left: 12px;
-      padding: 10px 62px 10px 29px;
-   }
-
-   .icon-send-email {
-      position: absolute;
-      fill: var(--white-color);
-      top: 50%;
-      transform: translateY(-50%);
-      margin-left: 10px;
-   }
-   .subscribe-us-title {
-      display: block;
-      width: 100%;
-      font-weight: 700;
-      @include font-size-height(14px, 1.14);
-      text-transform: uppercase;
-      color: var(--white-color);
-      margin-bottom: 20px;
-      text-align: start;
-   }
    .contact-form-email {
-      background-color: var(--header-footer-background-color);
       width: 358px;
-      height: 50px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-      padding: 15px 16px;
-      color: var(--white-color);
       margin-bottom: 0;
-
-      &::placeholder {
-         @include font-size-height(16px, 1.25);
-         color: rgba(255, 255, 255, 0.6);
-      }
+      margin-right: 12px;
    }
 }

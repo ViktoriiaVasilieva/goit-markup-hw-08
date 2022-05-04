@@ -48,7 +48,8 @@
 
 @media screen and (min-width: 1200px) {
    .team-list {
-      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
    }
    .team-list-item {
       background-color: var(--white-color);
@@ -59,6 +60,9 @@
       &:not(:last-child) {
          margin-right: 30px;
       }
+   }
+   .team-list-item:nth-child(-n + 2) {
+      margin-bottom: 0;
    }
    .team-wrapper-description {
       padding: 30px 32px;
