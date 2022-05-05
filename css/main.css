@@ -530,6 +530,9 @@ body button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -564,6 +567,32 @@ body button {
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--white-color);
+}
+
+@media screen and (max-width: 480px) {
+  .social-list-icon {
+    max-width: 20px;
+    max-width: 50%;
+    -ms-flex-preferred-size: calc((100%-10px) / 2);
+        flex-basis: calc((100%-10px) / 2);
+  }
+  .social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team-wrapper-description {
+    padding: 0;
+  }
+  .team-member-name,
+  .description-position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .social-list-footer-title {
@@ -901,9 +930,29 @@ body button {
   border-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    width: 210px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients-list-item {
     width: 170px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clients-list-item {
+    max-width: 210px;
+    max-width: 50%;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+  .clients-list-icon {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    min-width: 50%;
   }
 }
 
@@ -1296,8 +1345,8 @@ body button {
   padding: 118px 60px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/retina-img/background-img.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/retina-img/background-img.jpg");
-  max-width: 480px;
-  min-height: 400px;
+  max-width: 1600px;
+  min-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1308,8 +1357,6 @@ body button {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/retina-img/background-img@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/retina-img/background-img@2x.jpg");
     padding: 118px 0;
-    max-width: 480px;
-    min-height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1321,8 +1368,6 @@ body button {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/background-img-tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/background-img-tablet.jpg");
-    max-width: 768px;
-    min-height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1355,8 +1400,6 @@ body button {
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/backgroung-img.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/backgroung-img.jpg");
-    max-width: 1600px;
-    min-height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

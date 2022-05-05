@@ -1,7 +1,9 @@
 .social-list {
    display: flex;
+   align-items: center;
    justify-content: space-between;
 }
+
 .social-list-link {
    @include position;
    width: 44px;
@@ -22,5 +24,23 @@
    .social-list-link:hover &,
    .social-list-link:focus & {
       fill: var(--white-color);
+   }
+}
+@media screen and (max-width: 480px) {
+   .social-list-icon {
+      max-width: 20px;
+      max-width: 50%;
+      flex-basis: calc((100%-10px) / 2);
+   }
+   .social-list {
+      justify-content: center;
+   }
+   .team-wrapper-description {
+      padding: 0;
+   }
+   .team-member-name,
+   .description-position {
+      display: flex;
+      justify-content: center;
    }
 }
