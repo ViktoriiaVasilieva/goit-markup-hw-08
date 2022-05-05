@@ -42,6 +42,9 @@
    .feature-list__item {
       width: 354px;
    }
+   .feature-list__title {
+      justify-content: flex-start;
+   }
 }
 @media screen and (min-width: 1200px) {
    .feature-list__item {

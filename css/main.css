@@ -1435,6 +1435,11 @@ body button {
   .feature-list__item {
     width: 354px;
   }
+  .feature-list__title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
