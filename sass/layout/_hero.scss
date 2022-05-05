@@ -20,7 +20,7 @@
       ),
       url('../img/background-img-mobile.jpg');
    max-width: 1600px;
-   min-height: 600px;
+   min-height: 400px;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -97,6 +97,7 @@
          background-repeat: no-repeat;
          background-size: cover;
          margin: 0 auto;
+         min-height: 600px;
       }
       @media (min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),

@@ -1346,7 +1346,7 @@ body button {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/background-img-mobile.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background-img-mobile.jpg");
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1404,6 +1404,7 @@ body button {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    min-height: 600px;
   }
 }
 
