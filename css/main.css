@@ -676,9 +676,9 @@ body button {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   padding: 77px 24px;
+  min-width: 402px;
   opacity: 0;
   font-size: 18px;
   line-height: 1.56;
