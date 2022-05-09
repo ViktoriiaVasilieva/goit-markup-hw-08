@@ -46,7 +46,7 @@
    left: 50%;
    transform: translate(-50%, -50%) scale(1);
 
-   min-width: 450px;
+   width: 95%;
    min-height: 609px;
 
    background-color: var(--white-color);
@@ -105,7 +105,7 @@
    text-align: center;
    font-weight: 700;
    @include font-size-height(20px, 1.15);
-   width: 370px;
+   flex-basis: 370px;
    margin-bottom: 12px;
 }
 .contact-form-fiel-title {
