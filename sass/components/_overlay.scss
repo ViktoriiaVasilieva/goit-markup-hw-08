@@ -19,6 +19,7 @@
    .projects-list-link:focus & {
       transform: translateY(0);
       opacity: 1;
+      overflow: auto;
    }
 }
 @media screen and (min-width: 768px) {
