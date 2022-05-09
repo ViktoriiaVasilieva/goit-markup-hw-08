@@ -46,7 +46,7 @@
    left: 50%;
    transform: translate(-50%, -50%) scale(1);
 
-   width: 95%;
+   min-width: 95%;
    min-height: 609px;
 
    background-color: var(--white-color);
@@ -206,6 +206,9 @@
    }
 }
 @media screen and (min-width: 768px) {
+   .contact-form-title {
+      min-width: 370px;
+   }
    .modal {
       min-width: 450px;
       min-height: 609px;

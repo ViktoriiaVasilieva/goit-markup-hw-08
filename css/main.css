@@ -223,7 +223,7 @@ body button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 95%;
+  min-width: 95%;
   min-height: 609px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -441,6 +441,9 @@ body button {
 }
 
 @media screen and (min-width: 768px) {
+  .contact-form-title {
+    min-width: 370px;
+  }
   .modal {
     min-width: 450px;
     min-height: 609px;
